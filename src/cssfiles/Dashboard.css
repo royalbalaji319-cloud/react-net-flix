@@ -1,0 +1,738 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #141414;
+  color: #fff;
+}
+
+/* ----------------- Navbar ----------------- */
+.navbar {
+  background-color: rgb(0, 0, 0) !important;
+  padding: 0.5rem 2rem;
+  height: 110px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+    margin-top: 90px;
+
+}
+.btn1{
+  color: rgb(255, 9, 9);
+}
+.btn1:hover{
+  color: white;
+}
+
+.navbar-brand img {
+  height: 45px; 
+  margin-left: -100px;
+  margin-top: 10px;
+}
+
+.navbar-nav {
+  gap: 30px;
+  margin-left: 30px;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  color: #fefbfb !important;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ff3a3a !important; 
+}
+
+.navbar-nav .nav-link.active {
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+.navbar-toggler {
+  border-color: #b3b3b3;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(179,179,179,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/ %3E%3C/svg%3E");
+}
+
+.form-control {
+  background-color: #333333;
+  border: 1px solid #444444;
+  color: #fff;
+    height: 40px;
+
+  
+}
+
+.form-control::placeholder {
+  color: #bbb;
+}
+
+.btn-outline-light {
+  color: #fff;
+  border-color: #fff;
+  height: 35px;
+  width: 60px;
+margin-top: 2px;  
+border: none;
+}
+
+
+.btn-outline-light:hover {
+  background-color: #fff;
+  color: #141414;
+}
+
+/* ----------------- Dashboard ----------------- */
+.dashboard {
+  margin-top: 90px; 
+  padding: 20px;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: black;
+}
+
+/* ----------------- Categories & Carousel ----------------- */
+.category {
+  margin-bottom: 40px;
+}
+
+.category h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: white;
+}
+
+.carousel-container {
+  position: relative;
+}
+
+.trending-row {
+  display: flex;
+  overflow-x: auto;
+  gap: 12px;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+}
+
+.trending-card {
+  width: 150px;
+  height: 225px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #0c0b0b;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.trending-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+.trending-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.no-poster {
+  width: 150px;
+  height: 225px;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #999;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+/* ----------------- Scroll Buttons ----------------- */
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(20, 20, 20, 0.8);
+  border: none;
+  font-size: 32px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 10;
+  width: 45px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.scroll-btn.left {
+  left: -15px;
+}
+
+.scroll-btn.right {
+  right: -15px;
+}
+
+.scroll-btn:hover {
+  background: rgba(20, 20, 20, 1);
+}
+
+/* ----------------- Modal ----------------- */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 20, 20, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #141414;
+  padding: 15px;
+  border-radius: 8px;
+  max-width: 800px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-content iframe {
+  width: 100%;
+  height: 450px;
+  border-radius: 8px;
+}
+
+.modal-content button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #e50914;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* ----------------- Hero Section ----------------- */
+.hero-landing {
+  position: relative;
+  width: 100%;
+  height: 80vh; 
+  overflow: hidden;
+  color: white;
+}
+
+.hero-landing-video,
+.hero-landing-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero-landing-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.3));
+  z-index: 1;
+}
+
+.hero-landing-content {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  z-index: 2;
+  max-width: 600px;
+}
+
+.hero-landing-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+
+.hero-landing-description {
+  font-size: 1.1rem;
+  color: #ddd;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.hero-landing-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.hero-landing-buttons button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 10px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-landing-play-btn {
+  background-color: white;
+  color: black;
+}
+
+.hero-landing-play-btn:hover {
+  background-color: #e6e6e6;
+}
+
+.hero-landing-info-btn {
+  background-color: rgba(109, 109, 110, 0.7);
+  color: white;
+}
+
+.hero-landing-info-btn:hover {
+  background-color: rgba(109, 109, 110, 0.9);
+}
+
+/* ----------------- Responsive ----------------- */
+@media screen and (max-width: 768px) {
+  .trending-card {
+    width: 120px;
+    height: 180px;
+  }
+
+  .scroll-btn {
+    width: 35px;
+    height: 60px;
+    font-size: 28px;
+  }
+
+  .modal-content iframe {
+    height: 300px;
+  }
+  .hero-landing{
+    height: 100vh;
+  }
+
+  .hero-landing-content {
+    bottom: 30px;
+    left: 20px;
+    max-width: 90%;
+  }
+
+  .hero-landing-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-landing-description {
+    font-size: 1rem;
+  }
+}
+
+.trending-row {
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+}
+
+.trending-row .trending-card {
+  margin-right: 20px; /* space between cards */
+  flex-shrink: 0;
+}
+
+/* ----------------- Responsive ----------------- */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  
+
+  /* Navbar */
+  .navbar {
+    padding: 0.5rem 1rem;
+    height: 80px;
+  }
+
+  .navbar-brand img {
+    height: 35px;
+    margin-left: -20px;
+    margin-top: 5px;
+  }
+
+  .navbar-nav {
+    gap: 15px;
+    margin-left: 10px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 0.9rem;
+  }
+
+  .navbar-toggler {
+    width: 35px;
+    height: 35px;
+  }
+
+  /* Trending / Carousel */
+  .trending-card {
+    width: 120px;
+    height: 180px;
+  }
+
+  .scroll-btn {
+    width: 35px;
+    height: 60px;
+    font-size: 28px;
+  }
+
+  /* Modal */
+  .modal-content {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .modal-content iframe {
+    height: 300px;
+  }
+
+  .modal-content button {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  /* Hero Section */
+  .hero-landing {
+    height: 60vh;
+  }
+
+  .hero-landing-content {
+    bottom: 20px;
+    left: 15px;
+    max-width: 90%;
+  }
+
+  .hero-landing-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-landing-description {
+    font-size: 0.95rem;
+  }
+
+  .hero-landing-buttons button {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+   .navbar {
+    height: 110px;
+    padding: 0.3rem 0.5rem;
+  }
+
+  .navbar-brand img {
+    height: 35px;
+    margin-left: 0;
+    margin-top: 25px;
+  }
+
+  .navbar-nav {
+    gap: 10px;
+    margin-left: 5px;
+  }
+
+  .trending-card {
+    width: 100px;
+    height: 150px;
+  }
+
+  .scroll-btn {
+    width: 30px;
+    height: 50px;
+    font-size: 24px;
+  }
+
+  .hero-landing-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-landing-description {
+    font-size: 0.85rem;
+  }
+
+  .hero-landing-buttons button {
+    padding: 6px 16px;
+    font-size: 0.8rem;
+  }
+  .navbar-toggler{
+   border-width: 300px;
+  }
+}
+
+/* Smaller devices - mobile */
+  /* Styles for tablets */
+
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    height: 110px;
+    padding: 0.3rem 0.5rem;
+  }
+
+  .navbar-brand img {
+    height: 35px;
+    margin-left: 0;
+    margin-top: 25px;
+  }
+
+  .navbar-nav {
+    gap: 10px;
+    margin-left: 5px;
+  }
+
+  .trending-card {
+    width: 100px;
+    height: 150px;
+  }
+
+  .scroll-btn {
+    width: 30px;
+    height: 50px;
+    font-size: 24px;
+  }
+
+  .hero-landing-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-landing-description {
+    font-size: 0.85rem;
+  }
+
+  .hero-landing-buttons button {
+    padding: 6px 16px;
+    font-size: 0.8rem;
+  }
+  
+}
+
+/* Updated navbar */
+/* ----------------- Navbar ----------------- */
+.navbar {
+  background-color: #000 !important;
+  padding: 0.5rem 2rem;
+  height: 120px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.3s ease;
+}
+
+/* Netflix Logo */
+.navbar-brand img {
+  height: 45px;
+  margin-top: 5px;
+}
+
+/* Nav links */
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  color: #f5f5f5 !important;
+  transition: color 0.3s;
+  font-size: 1rem;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #e50914 !important;
+}
+
+.navbar-nav .nav-link.active {
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+/* Right-side items (search/profile) */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  
+}
+
+/* Profile icon */
+.profile-icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #e50914;
+}
+
+/* Search input */
+.form-control {
+  background-color: #141414;
+  border: 1px solid #333;
+  color: #fff;
+  height: 38px;
+  width: 200px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  padding: 0 10px;
+  margin-top: 20px;
+}
+
+.form-control::placeholder {
+  color: #aaa;
+}
+
+/* Bootstrap Toggler (hamburger icon) */
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+.navbar-toggler{
+  border-radius: -70px;
+  width: 60px;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* ----------------- Responsive Fixes ----------------- */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .navbar {
+    padding: 0.5rem 1rem;
+    height: 70px;
+  }
+
+  .navbar-brand img {
+    height: 38px;
+  }
+
+  .navbar-nav {
+    gap: 15px;
+  }
+
+  .form-control {
+    width: 150px;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.4rem 1rem;
+    height: auto;
+    height: 100px;
+    /* margin-top: 60px; */
+  }
+
+  .navbar-brand img {
+    height: 35px;
+  }
+
+  .navbar-collapse {
+  /* margin-top: 30px; */
+  background-color: #101010;
+  width: 100vw; 
+  padding: 1rem;
+  border-top: 1px solid #222;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 999;
+  border-radius: 0;
+}
+
+
+  .navbar-nav {
+    flex-direction: column;
+    /* align-items: flex-start; */
+    gap: 12px;
+  }
+
+  .form-control {
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .nav-right {
+    margin-top: 10px;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+.btn1{
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 10px;
+  /* height: 40px; */
+  width: 80px;
+  background-color: black;
+}
+.btn1:hover{
+  background-color: rgb(255, 0, 30);
+}
+.btn1 a{
+  text-decoration: none;
+  color: rgb(252, 252, 252);
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  .navbar{
+    height: 120px;
+  }
+  .navbar-brand img {
+    height: 30px;
+  }
+
+  .form-control {
+    height: 34px;
+    font-size: 0.85rem;
+  }
+
+  .profile-icon {
+    width: 30px;
+    height: 30px;
+  }
+   .hero-landing{
+    margin-top: -240px;
+   }
+}
+
+
+

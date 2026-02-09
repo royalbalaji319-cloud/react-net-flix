@@ -1,0 +1,143 @@
+.reasons {
+    margin-top: -50px;
+  background: black;
+  color: white;
+  padding: 60px 100px;
+  font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  
+
+}
+
+.reasons-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.reason-card {
+  background: linear-gradient(180deg, #1b1147 0%, #1c0107 100%);
+  flex: 1;
+  min-width: 240px;
+  padding: 25px;
+  border-radius: 15px;
+  position: relative;
+  display: flex;
+  height: 50vh;
+
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reason-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(255, 0, 0, 0.2);
+}
+
+.reason-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.reason-card p {
+  color: #b3b3b3;
+  font-size: 1rem;
+  line-height: 1.4;
+  flex: 1;
+}
+
+.icon-wrapper {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  font-size: 60px;
+  color: #e50914;
+}
+
+
+
+
+
+
+
+
+
+/* 📱 Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .reasons {
+    padding: 30px 20px;
+    margin-top: -30px;
+    text-align: center;
+  }
+
+  .reasons-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .cards {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .reason-card {
+    min-width: 100%;
+    padding: 20px;
+  }
+
+  .reason-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .reason-card p {
+    font-size: 0.9rem;
+  }
+
+  .icon-wrapper {
+    position: static;
+    font-size: 40px;
+    margin-top: 15px;
+    align-self: center;
+  }
+}
+
+/* 📲 Small tablets (481px–768px) */
+@media (max-width: 768px) {
+  .reasons {
+    padding: 40px 40px;
+  }
+
+  .reasons-title {
+    font-size: 1.6rem;
+  }
+
+  .cards {
+    gap: 18px;
+    
+  }
+
+  .reason-card {
+    flex: 1 1 45%;
+        height: 190px;
+
+  }
+
+  .reason-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .reason-card p {
+    font-size: 0.95rem;
+  }
+
+  .icon-wrapper {
+    font-size: 50px;
+  }
+}

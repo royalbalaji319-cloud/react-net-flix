@@ -1,0 +1,147 @@
+/* ==============================
+   Netflix Signup Page (Modern)
+   ============================== */
+
+.signup-page {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background: url("https://assets.nflxext.com/ffe/siteui/vlv3/53d239cf-9b6c-44e3-8450-15d5a05c9c71/75a5b9e2-cdc4-4d64-8cb8-6e9ebfd27a63/IN-en-20240729-popsignuptwoweeks-perspective_alpha_website_small.jpg")
+    center center / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== Overlay ===== */
+.signup-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+/* ===== Netflix Logo ===== */
+.signup-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px 50px;
+  z-index: 3;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.signup-logo {
+  width: 160px;
+}
+
+/* ===== Signup Card ===== */
+.signup-card {
+  position: relative;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 50px 40px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 90%;
+  color: #fff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+  margin-top: 100px;
+}
+
+/* ===== Input Fields ===== */
+.signup-card .form-label {
+  font-size: 1rem;
+  color: #b3b3b3;
+  margin-bottom: 5px;
+}
+
+.signup-card .form-control {
+  background-color: #333;
+  border: 1px solid #555;
+  color: #fff;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-bottom: 18px;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.signup-card .form-control:focus {
+  background-color: #444;
+  color: #fff;
+  border-color: #e50914;
+  box-shadow: none;
+}
+
+/* ===== Buttons ===== */
+.btn-danger {
+  background-color: #e50914;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.btn-danger:hover {
+  background-color: #f40612;
+}
+
+/* ===== Text & Links ===== */
+.text-white {
+  color: #b3b3b3 !important;
+  font-size: 0.95rem;
+}
+
+.text-white a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.text-white a:hover {
+  text-decoration: underline;
+  color: #f40612;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .signup-card {
+    padding: 35px 25px;
+    margin-top: 70px;
+  }
+
+  .signup-logo {
+    width: 130px;
+    margin-left: -10px;
+    margin-top: 10px;
+  }
+
+  .signup-nav {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .signup-card {
+    padding: 25px 20px;
+  }
+
+  .signup-card .form-control {
+    font-size: 0.9rem;
+  }
+
+  .btn-danger {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,260 @@
+
+/* Footer */
+.footer {
+  border-top: 8px solid #222;
+  padding: 60px 12%;
+  color: #000000;
+  background-color: black;
+  font-size: 0.9rem;
+}
+.faq-section {
+  background-color: #000;
+  color: #fff;
+  padding: 60px 20px 0 20px; 
+  text-align: center;
+  margin-top: -50px;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.footer {
+  border-top: none; 
+
+  color: #757575;
+  font-size: 0.9rem;
+  margin-top: 0; 
+}
+.footer a{
+  color:rgb(191, 182, 182)
+}
+
+.footer-cols {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.footer-cols ul {
+  list-style: none;
+  padding: 40px 90px;
+}
+
+.footer-cols li {
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .email-form {
+    flex-direction: column;
+  }
+
+  .email-form input {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  .email-form button {
+    width: 40%;
+  }
+  .learn a{
+    color: blue;
+
+  }
+  
+}
+.hero,.hero-content{
+  position: relative;
+  color: white;
+  text-align: center;
+  padding: 150px 20px;
+  overflow: hidden; 
+}
+
+.email-formm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; 
+  margin-top: 20px;
+}
+.email-formm input:hover{
+  outline: 2px solid rgb(65, 226, 33);
+}
+#para{
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+}
+#parag{
+  color: blue;
+}
+.footer{
+  font-size: 15px;
+}
+
+.email-formm input {
+  width: 590px;
+  padding: 15px 20px;
+  font-size: 16px;
+   height: 60px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6); 
+  border: 1px solid #757575;
+  border-radius: 4px;
+  outline: none;
+}
+
+.email-formm input::placeholder {
+  color: #b3b3b3; 
+  font-size: 16px;
+ 
+}
+button{}
+
+.email-formm button {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 11px 25px;
+  font-weight: 600;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  width: 250px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+}
+
+.email-formm button:hover {
+  background-color: #f40612;
+  
+}
+
+
+/* 📱 For small screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .hero,
+  .hero-content {
+    padding: 100px 15px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  .email-formm {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .email-formm input {
+    width: 90%;
+    height: 50px;
+    font-size: 14px;
+  }
+
+  .email-formm button {
+    width: 80%;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  #para {
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .footer {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .footer-cols {
+    /* flex-direction: column; */
+    align-items: center;
+    gap: 15px;
+  }
+
+  .footer-cols ul {
+    padding: 0;
+    /* text-align: center; */
+  }
+
+  .footer-cols li {
+    margin: 6px 0;
+    font-size: 0.95rem;
+  }
+
+  .footer-bottom {
+    margin-top: 20px;
+    font-size: 0.8rem;
+  }
+}
+
+/* 📲 For tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .hero,
+  .hero-content {
+    padding: 120px 25px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .email-formm {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .email-formm input {
+    width: 85%;
+    font-size: 15px;
+    height: 55px;
+  }
+
+  .email-formm button {
+    width: 70%;
+    font-size: 20px;
+    height: 55px;
+  }
+
+  .footer {
+    padding: 50px 40px;
+  }
+.footer-cols ul {
+  padding: 10px 0;
+  list-style: none;
+}
+
+.footer-cols li {
+  display: block; 
+  margin: 11px 0;
+  font-size: 0.9rem;
+}
+
+}
