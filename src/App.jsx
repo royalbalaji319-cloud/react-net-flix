@@ -1,24 +1,30 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 
 // Components
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import FAQ from "./components/FAQ";
-import Footer from "./components/Footer";
 import Trending from "./components/Trending";
 import ReasonsToJoin from "./components/ReasonsToJoin";
+import FAQ from "./components/FAQ";
+import Footer from "./components/Footer";
+
 import SignIn from "./components/SignIn";
-import Signup from "./components/Signup"; // ✅ Netflix-style Signup page
+import Signup from "./components/Signup";
 import RegisterForm from "./components/RegisterForm";
 import ForgotPassword from "./components/ForgotPassword";
 import Dashboard from "./components/Dashboard";
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Routes>
-        {/* 🌟 Homepage */}
+        {/* 🌟 Home Page */}
         <Route
           path="/"
           element={
@@ -33,19 +39,19 @@ function App() {
           }
         />
 
-        {/* 🔐 Authentication Routes */}
+        {/* 🔐 Auth Pages */}
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/registerform" element={<RegisterForm />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
 
-        {/* 🎬 Dashboard (after login) */}
+        {/* 🎬 Dashboard */}
         <Route path="/dashboard" element={<Dashboard />} />
 
-        {/* 🚫 Catch-all Route (redirect unknown URLs to homepage) */}
+        {/* 🚫 Unknown routes → Home */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
 
