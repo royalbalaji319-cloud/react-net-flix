@@ -64,10 +64,12 @@ Netflix/
 ├── vite.config.js
 └── README.md
 
- Author
+ ## 👤 Author
 
-Balaji Akula
-Frontend Developer | React Enthusiast
+**Balaji Akula**  
+Frontend / React Developer  
+Netflix Clone Project
+
 
 
 
