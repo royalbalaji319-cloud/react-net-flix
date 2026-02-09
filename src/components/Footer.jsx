@@ -67,8 +67,11 @@ const Footer = () => {
       >
          This is a learning/demo project — not the real Netflix site.
       </p>
+       <p>© {new Date().getFullYear()} Netflix Clone</p>
+  <p>Built by <strong>Balaji Akula</strong> ❤️</p>
     </footer>
   );
 };
 
 export default Footer;
+
