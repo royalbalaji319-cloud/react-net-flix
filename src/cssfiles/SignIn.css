@@ -308,8 +308,16 @@
     font-weight: 600; 
 }
 
-.lang-option:hover:{
+.lang-option:hover{
  background-color: aliceblue;
+}
+.page-root {
+  min-height: 100vh;
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/7e9b3f9d-2a5b-4e45-9df8-9e5a9a6d5d0a/7e9b3f9d-2a5b-4e45-9df8-9e5a9a6d5d0a_IN-en-20240122-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
 }
 
 /* -------------------------------
