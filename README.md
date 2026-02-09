@@ -30,12 +30,10 @@ It focuses on creating a modern UI with reusable components and clean design.
 ##  Preview
 
 **Live Demo:**  
- (Render live link ikkada pettu)
+ Live Link: https://react-net-flix.onrender.com/
 
-**GitHub Repository:**  
- (Mee GitHub repo link ikkada pettu)
+<img width="1919" height="1028" alt="image" src="https://github.com/user-attachments/assets/df978b5b-53cf-4e23-a86f-ed141b239bff" />
 
-(Screenshots can be added here)
 
 ---
 
