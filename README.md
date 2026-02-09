@@ -1,3 +1,77 @@
+#  Netflix Clone (React & Vite)
+
+This project is a **Netflix-inspired frontend web application** built using **React.js with Vite**.  
+It focuses on creating a modern UI with reusable components and clean design.
+
+---
+
+##  Features
+
+-  Built with React.js & Vite
+-  Reusable React components
+-  Custom CSS styling
+-  Language / localisation support
+-  Responsive design
+-  Fast development & build using Vite
+
+---
+
+##  Technologies Used
+
+- **Frontend:** React.js
+- **Bundler:** Vite
+- **Styling:** CSS3
+- **Language:** JavaScript (JSX)
+- **IDE:** Visual Studio Code
+- **Deployment:** Render (Static Site)
+
+---
+
+##  Preview
+
+**Live Demo:**  
+ (Render live link ikkada pettu)
+
+**GitHub Repository:**  
+ (Mee GitHub repo link ikkada pettu)
+
+(Screenshots can be added here)
+
+---
+
+##  Project Objective
+
+- Learn React.js fundamentals
+- Understand component-based architecture
+- Practice frontend project structure
+- Build a real-world UI clone
+- Improve frontend development skills
+
+---
+
+
+
+Netflix/
+├── src/
+│   ├── components/
+│   ├── cssfiles/
+│   ├── localisation/
+│   ├── App.jsx
+│   └── main.jsx
+├── public/
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
+
+ Author
+
+Balaji Akula
+Frontend Developer | React Enthusiast
+
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
